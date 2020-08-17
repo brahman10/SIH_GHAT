@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiverFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="#000000"
+        android:outlineSpotShadowColor="#000000"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/btnganga"
+                android:background="@drawable/searchbar"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:src="@drawable/ganga3"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/river_img"/>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ganga"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="30dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/btngomti"
+                android:background="@drawable/searchbar"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:src="@drawable/ganga4"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gomti"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/btnghag"
+                android:background="@drawable/searchbar"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:src="@drawable/ganga"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ghaghara"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/btngandak"
+                android:background="@drawable/searchbar"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:src="@drawable/ganga2"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gandak"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:id="@+id/btnyam"
+                android:layout_margin="5dp"
+                android:background="@drawable/searchbar"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:src="@drawable/ganga3"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yamuna"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/btnson"
+                android:background="@drawable/searchbar"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:src="@drawable/ganga4"
+                    android:layout_weight="2.5"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Son"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/btnkosi"
+                android:background="@drawable/searchbar"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:src="@drawable/ganga"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kosi"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/searchbar"
+                android:id="@+id/btnpun"
+                android:layout_margin="5dp"
+                android:padding="2dp"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ganga2"
+                    android:scaleType="centerCrop" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PunPun"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/searchbar"
+                android:id="@+id/btnmaha"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:src="@drawable/ganga3"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mahananda"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/searchbar"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:id="@+id/btnramg"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:src="@drawable/ganga4"
+                    android:layout_weight="2.5"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ramganga"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/searchbar"
+                android:id="@+id/btntamsa"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:src="@drawable/ganga"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tamsa"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

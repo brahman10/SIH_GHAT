@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomFragment">
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llsearchhome"
+        android:queryHint="Search By Name"
+        android:layout_margin="3dp"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/searchbar"
+        />
+
+    <ListView
+        android:id="@+id/listviewhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/llsearchhome"
+        android:visibility="gone"
+        android:layout_marginTop="10dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llsearchhome"
+        android:id="@+id/data">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="@string/topSearches"
+                            android:textStyle="italic"
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorSecondaryText"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_arrow_forward_24"/>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="horizontal"
+                        android:layout_margin="5dp"
+                        android:id="@+id/recyclerTop"/>
+                    <ProgressBar
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/prgrshome"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="@string/news"
+                            android:textStyle="italic"
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorSecondaryText"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_arrow_forward_24"/>
+                    </LinearLayout>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/article">
+                            <androidx.cardview.widget.CardView
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="300dp"
+                                android:layout_height="200dp"
+                                card_view:contentPadding="8dp"
+                                card_view:cardCornerRadius="7dp"
+                                card_view:cardElevation="8dp"
+                                card_view:cardBackgroundColor="@android:color/black"
+                                android:layout_centerHorizontal="true"
+                                android:layout_margin="5dp">
+                                <!--Text View over Card View-->
+                                <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_width="300dp"
+                                    android:src="@drawable/article"
+                                    android:scaleType="centerCrop"
+                                    android:layout_height="200dp"
+                                    android:textColor="#fff"/>
+
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="300dp"
+                                android:layout_height="200dp"
+                                card_view:contentPadding="8dp"
+                                card_view:cardCornerRadius="7dp"
+                                card_view:cardElevation="8dp"
+                                card_view:cardBackgroundColor="@android:color/black"
+                                android:layout_centerHorizontal="true"
+                                android:layout_margin="5dp">
+                                <!--Text View over Card View-->
+                                <ImageView
+                                    android:id="@+id/item_image"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_width="300dp"
+                                    android:src="@drawable/articlee"
+                                    android:scaleType="centerCrop"
+                                    android:layout_height="200dp"
+                                    android:textColor="#fff"/>
+
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

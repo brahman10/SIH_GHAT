@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "946201622135",
+    "firebase_url": "https://thedominators-f48f2.firebaseio.com",
+    "project_id": "thedominators-f48f2",
+    "storage_bucket": "thedominators-f48f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946201622135:android:2156f00c79f9fc787ef872",
+        "android_client_info": {
+          "package_name": "com.example.thedominators"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946201622135-aq76phcku4jqhb5ab8kh7gcs4ampdo71.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thedominators",
+            "certificate_hash": "31f4cefbc39e42fc116dfcdc186f3c461e1d4c4a"
+          }
+        },
+        {
+          "client_id": "946201622135-smp1jr3isldioiil3uqg6dtemh1lh5hb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaJocAEyGcUKbb18gQlIy6mwS5Nb6CRX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946201622135-smp1jr3isldioiil3uqg6dtemh1lh5hb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

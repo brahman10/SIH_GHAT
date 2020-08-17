@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">GHaT</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="explore">Explore</string>
+    <string name="topSearches">Top Searches</string>
+    <string name="favorites">Favourites</string>
+    <string name="news">Articles</string>
+    <string name="gallery">Gallery</string>
+    <string name="filter">Filters</string>
+    <string name="rivers">Rivers</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="proceed">Proceed</string>
+    <string name="or_signup_with">Or Sign Up With</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_in">Sign In</string>
+    <string-array name="type">
+        <item name="ghat">Ghat</item>
+        <item name="riverfront">Riverfront</item>
+        <item name="crematory">Crematory</item>
+    </string-array>
+    <string-array name="location">
+        <item name="all">All</item>
+        <item name="near">Near Me</item>
+    </string-array>
+    <string-array name="filtertype">
+        <item name="all">All</item>
+        <item name="ghat">Ghat</item>
+        <item name="riverfront">Riverfront</item>
+        <item name="crematory">Crematory</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
